@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.set("view engine", "ejs");
 
 app.use('/', indexRouter);
+app.use('/test', indexRouter);
 app.use('/todo', todoRouter);
 app.use('/api/todo', todoApiRouter);
 
